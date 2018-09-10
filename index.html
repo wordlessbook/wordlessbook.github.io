@@ -1,0 +1,238 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta http-equiv="content-type" content="text/html; charset=UTF-8">
+<meta name="robots" content="noindex, nofollow">
+<meta name="googlebot" content="noindex, nofollow">
+
+
+
+<style type="text/css">
+
+
+
+.tabs {
+max-width: 100%;
+float: none;
+list-style: none;
+padding: 0;
+margin: 5px auto;
+
+
+}
+.tabs:after {
+content: '';
+display: table;
+clear: both;
+}
+.tabs input[type=radio] {
+display:none;
+}
+.tabs label {
+display: block;
+float: left;
+width: 20%;
+
+font-size: 30px;
+font-weight: normal;
+text-decoration: none;
+text-align: center;
+line-height: 6;
+cursor: pointer;
+
+
+}
+
+.tabs tab2 {
+display: block;
+float: left;
+width: 20%;
+color: yellow;
+font-size: 30px;
+font-weight: normal;
+text-decoration: none;
+text-align: center;
+line-height: 2;
+cursor: pointer;
+
+
+background: #bf3f3f;
+}
+
+
+
+/*
+.tabs label span {
+display: none;
+}
+*/
+.tabs label i {
+padding: 5px;
+margin-right: 0;
+}
+.tabs label:hover {
+color: #77828a;
+
+
+}
+.tab-content {
+display: none;
+width: 100%;
+height:94vh;
+float: left;
+
+box-sizing: border-box;
+background-color:#7fff;
+}
+
+.tab-content * {
+-webkit-animation: scale 0.7s ease-in-out;
+-moz-animation: scale 0.7s ease-in-out;
+animation: scale 0.7s ease-in-out;
+}
+
+
+
+
+/*
+.tabs label {
+-webkit-transition: all 0.5s;
+transition: all 0.5s;
+}
+@keyframes scale {
+0% {
+transform: scale(0.9);
+opacity: 0;
+}
+50% {
+transform: scale(1.01);
+opacity: 0.5;
+}
+100% {
+transform: scale(1);
+opacity: 1;
+}
+}
+*/
+.tabs [id^="tab"]:checked + label {
+
+
+color: #77828a;
+}
+
+.tabs [id^="tab1"] + label {
+background:#FFDF00;
+}
+
+.tabs [id^="tab2"] + label {
+background: #000000;
+}
+.tabs [id^="tab3"] + label {
+background: #FF0400;
+}
+.tabs [id^="tab4"] + label {
+background: #FFFFFF;
+}
+.tabs [id^="tab5"] + label {
+background: #00B216;
+}
+
+#tab-content1 {
+  background-color:#FFDF00;
+}
+
+#tab-content2 {
+  background-color:#000000;
+}
+
+#tab-content3 {
+  background-color:#FF0400;
+}
+
+#tab-content4 {
+  background-color:#FFFFFF;
+}
+
+#tab-content5 {
+  background-color:#00B216;
+}
+
+
+
+
+
+
+
+
+
+#tab1:checked ~ #tab-content1,
+#tab2:checked ~ #tab-content2,
+#tab3:checked ~ #tab-content3,
+#tab4:checked ~ #tab-content4,
+#tab5:checked ~ #tab-content5 {
+display: block;
+}
+
+@media (min-width: 768px) {
+.tabs i {
+padding: 5px;
+margin-right: 10px;
+}
+.tabs label span {
+display: inline-block;
+}
+.tabs {
+max-width: 1750px;
+margin: 0px auto;
+}
+}
+
+</style>
+
+<title>Wordless Book</title>
+
+</head>
+
+<body>
+
+<div class="tabs">
+<!-- Radio button and lable for #tab-content1 -->
+<input type="radio" name="tabs" id="tab1" checked >
+<label for="tab1">
+<i class="fa fa-html5"></i>
+</label>
+<!-- Radio button and lable for #tab-content2 -->
+<input type="radio" name="tabs" id="tab2">
+<label for="tab2">
+<i class="fa fa-css3"></i>
+</label>
+<!-- Radio button and lable for #tab-content3 -->
+<input type="radio" name="tabs" id="tab3">
+<label for="tab3">
+<i class="fa fa-code"></i>
+</label>
+<!-- Radio button and lable for #tab-content3 -->
+<input type="radio" name="tabs" id="tab4">
+<label for="tab4">
+<i class="fa fa-code"></i>
+</label>
+<input type="radio" name="tabs" id="tab5">
+<label for="tab5">
+<i class="fa fa-code"></i>
+</label>  
+
+<div id="tab-content1" class="tab-content">
+</div> <!-- #tab-content1 -->
+<div id="tab-content2" class="tab-content">
+</div> <!-- #tab-content2 -->
+<div id="tab-content3" class="tab-content">
+</div> <!-- #tab-content3 -->
+<div id="tab-content4" class="tab-content">
+</div> <!-- #tab-content4 -->
+<div id="tab-content5" class="tab-content">
+</div> <!-- #tab-content5 -->
+</div>
+
+</body>
+
+</html>
